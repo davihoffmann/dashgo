@@ -1,5 +1,5 @@
-import { Flex, Input, Text, Icon } from '@chakra-ui/react';
-import { RiSearchLine } from 'react-icons/ri';
+import { Flex, Input, Text, Icon, HStack, Box, Avatar } from '@chakra-ui/react';
+import { RiNotificationLine, RiSearchLine, RiUserAddLine } from 'react-icons/ri';
 
 export default function Header() {
   return (
@@ -32,6 +32,26 @@ export default function Header() {
         />
 
         <Icon as={RiSearchLine} fontSize="20" />
+      </Flex>
+
+      <Flex alignItems="center" marginLeft="auto">
+        <HStack 
+          spacing="8" mx="8" pr="8" pt="1" 
+          color="gray.300" borderRightWidth={1} 
+          borderColor="gray.700"
+        >
+          <Icon as={RiNotificationLine} />
+          <Icon as={RiUserAddLine} />
+        </HStack>
+
+        <Flex alignItems="center">
+          <Box mr="4" textAlign="right">
+            <Text>Davi Hoffmann</Text>
+            <Text color="gray.300" fontSize="small">davi.hoffmann@gmail.com</Text>
+          </Box>
+
+          <Avatar size="md" name="Davi Hoffmann" src="https://github.com/davihoffmann.png" />
+        </Flex>
       </Flex>
     </Flex>
   )
