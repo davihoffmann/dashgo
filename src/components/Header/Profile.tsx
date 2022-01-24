@@ -9,8 +9,12 @@ export default function Profile({ showProfileData = true }: ProfileProps) {
     <Flex alignItems="center">
       {showProfileData && (
         <Box mr="4" textAlign="right">
-          <Text>Davi Hoffmann</Text>
-          <Text color="gray.300" fontSize="small">davi.hoffmann@gmail.com</Text>
+          <Text>
+            Davi Hoffmann
+          </Text>
+          <Text color="gray.300" fontSize="small">
+            davi.hoffmann@gmail.com
+          </Text>
         </Box>
       )}
       <Avatar size="md" name="Davi Hoffmann" src="https://github.com/davihoffmann.png" />
